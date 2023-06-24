@@ -1,4 +1,4 @@
-// teste
+// teste git
 const $player1 = document.querySelector('.namePlayer1')
 const $player2 = document.querySelector('.namePlayer2')
 let player1Score = 0
