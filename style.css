@@ -1,0 +1,203 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #14bdac;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.containerMain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  padding: 0px 0px;
+}
+
+.players {
+  background-color: rgb(41, 40, 40);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 30px;
+  padding: 5px;
+}
+
+.players span {
+  color: White;
+  font-size: 14px;
+}
+
+.players .player1 .input,
+.players .player2 .input {
+  background-color: transparent;
+  height: 40px;
+  width: 250px;
+  border: 1px solid rgba(128, 128, 128, 0.795);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  color: white;
+}
+
+.players .player1 .input h5,
+.players .player2 .input h5 {
+  margin: 0px;
+}
+
+.turn {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.containerMain .mainDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 400px;
+}
+
+.mainDiv .noBorderTopLeft {
+  border-top: none;
+  border-left: none;
+}
+
+.mainDiv .noBorderTop {
+  border-top: none;
+}
+
+.mainDiv .noBorderTopRight {
+  border-top: none;
+  border-right: none;
+}
+
+.mainDiv .noBorderLeft {
+  border-left: none;
+}
+
+.mainDiv .noBorderRight {
+  border-right: none;
+}
+
+.mainDiv .noBorderBottomLeft {
+  border-bottom: none;
+  border-left: none;
+}
+
+.mainDiv .noBorderBottom {
+  border-bottom: none;
+}
+
+.mainDiv .noBorderBottomRight {
+  border-bottom: none;
+  border-right: none;
+}
+
+.bloco {
+  border: 4px solid rgba(0, 0, 0, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  cursor: pointer;
+}
+
+.styleX {
+  position: absolute;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.747);
+}
+
+.styleO {
+  position: absolute;
+  font-size: 100px;
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(41, 40, 40);
+  color: #14bdac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.footer .rebootGame {
+  cursor: pointer;
+}
+
+body .containerMain .players .thisTurn {
+  border-bottom: 2px solid #14bdac;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.winX {
+  width: 500px;
+  height: 400px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #14bdac;
+  color: white;
+  line-height: 400px;
+}
+
+.winO {
+  width: 500px;
+  height: 400px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #14bdac;
+  color: white;
+  line-height: 400px;
+}
+
+.winX h1,
+.winO h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winX h1 span {
+  color: rgba(0, 0, 0, 0.747);
+  font-size: 80px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.winO h1 span {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.empate {
+  width: 500px;
+  height: 400px;
+  background-color: #14bdac;
+  color: white;
+  line-height: 400px;
+  text-align: center;
+  font-size: 70px;
+  display: none;
+}
