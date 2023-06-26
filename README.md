@@ -1,1 +1,1 @@
-# TicTacToe utilizando html, JS e CSS puro
+# TicTacToe utilizando HTML, JS e CSS puro
